@@ -1,11 +1,13 @@
 <section id="cartas">
   <p>30 cartas estão sendo preenchido aleatóriamente</p>
   <p>Ecolha 3 cartas</p>
-  <div id="cartas">
-    <label>
-      <input type="checkbox" >
-      <img src="" alt="Capa Carta" />
-      <img src="" alt="Animação Aleatório" />
-    </label>
+  <div id="baralho">
+    <ng-container *ngFor="let carta of motor.baralhoAtual; let i=index">
+      <input id="carta-{{i}}" type="checkbox" value={{i}} >
+      <label for="carta-{{i}}">
+        <img src="/assets/img/baralho/capa.jpg" alt="Capa Carta" />
+        <img src="/assets/img/baralho/all.gif" alt="Animação Aleatório" />
+      </label>
+    </ng-container>
   </div>
 </section>

@@ -1,0 +1,49 @@
+#cartas
+  padding: 30px 20px
+  min-height: 100vh
+  background: url('/assets/img/bg-6.jpg')
+  background-position: center
+  background-size: cover
+  color: white
+
+  p
+    text-align: center
+    font-size: 36px
+    font-weight: bold
+    text-transform: uppercase
+    padding-bottom: 10px
+
+    &:nth-child(2)
+      display: none
+
+  #baralho
+    display: flex
+    flex-wrap: wrap
+    width: 90%
+    margin: 0 auto
+
+    input
+      display: none
+
+      &:checked+label
+        transform: scale(0.0001)
+
+    label
+      flex: 0 0 10%
+      width: 10%
+      position: relative
+      line-height: 0
+      padding: 5px
+      cursor: pointer
+      transition: .5s
+      border-radius: 10px
+      overflow hidden
+
+      &:hover
+        transform: scale(1.1)
+
+      img:nth-child(2)
+        position: absolute
+        top: 5px
+        left: 5px
+        width: calc(100% - 10px)
