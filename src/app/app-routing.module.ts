@@ -11,7 +11,6 @@ const routes: Routes = [
   {path: '', component: StartComponent},
   {path: 'cartas', component: CartasComponent},
   {path: 'jogada', component: JogoComponent},
-  {path: 'resultado', component: ResultadoComponent},
   {path: 'final', component: FinalComponent},
   {path: 'tutorial', component: TutorialComponent},
 ];

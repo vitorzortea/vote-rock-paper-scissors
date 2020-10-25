@@ -4,8 +4,8 @@
       <img src="/assets/img/enemy.png" alt="Mary Saotome" />
       <div class="money">
         <p>
-          {{motor.moneyEnemy}}
-          <span>￥ {{motor.moneyEnemy}},000</span>
+          {{motor.moneyEnemy - apostaForm.controls.aposta.value}}
+          <span>￥ {{motor.moneyEnemy - apostaForm.controls.aposta.value}},000</span>
         </p>
         <img src="/assets/img/icon-ficha.png" alt="Fichas">
       </div>
@@ -23,8 +23,8 @@
       <div>
         <div class="money">
           <p>
-            {{motor.moneyPlayer}}
-            <span>￥ {{motor.moneyPlayer}},000</span>
+            {{motor.moneyPlayer - apostaForm.controls.aposta.value}}
+            <span>￥ {{motor.moneyPlayer - apostaForm.controls.aposta.value}},000</span>
           </p>
           <img src="/assets/img/icon-ficha.png" alt="Fichas">
         </div>

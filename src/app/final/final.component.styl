@@ -1,0 +1,67 @@
+section
+  color: white
+  display: flex
+  flex-direction: column
+  min-height: 100vh;
+
+  div
+    max-width: 1080px
+    width: 90%
+    display: table
+    margin: 0 auto
+    padding: 10px 30px;
+    text-align: center
+    text-shadow: 2px 2px 3px black
+
+    h2
+      font-size: 52px
+      text-transform: uppercase
+
+    p
+      font-size: 20px
+
+  a
+    display: table
+    background: #307cbf
+    border: solid 5px #0d1f31
+    font-weight: 900
+    text-transform: uppercase
+    font-size: 25px
+    -webkit-text-stroke: 1px
+    color: #0d1f31
+    padding: 10px 30px
+    border-radius: 10px
+    margin: 0 auto
+    transition: 0.5s
+    border-radius: 15px
+
+    &:hover
+      transform: scale(1.1)
+      color: #307cbf
+      background: #0d1f31
+
+  &#win
+    background: url('/assets/img/bg-5.jpg')
+    background-position: center
+    background-size: cover
+    justify-content: flex-end
+    padding: 20px
+
+    div
+      background-color: rgba(229, 42, 46, .36);
+      padding-bottom: 35px
+
+    a
+      margin-top: -25px
+
+
+  &#lose
+    background: url('/assets/img/bg-4.jpg')
+    background-position: center
+    background-size: cover
+    justify-content: space-between
+    padding: 20px
+
+    div
+      background-color: rgba(0, 0, 63, .36);
+

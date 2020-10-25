@@ -1,1 +1,14 @@
-<p>final works!</p>
+<section id="win" *ngIf="this.motor.moneyEnemy == 0">
+  <div>
+    <h2>Você Venceu!</h2>
+    <p>Mas já? eu quero mais! vamos aposta até o limite!</p>
+  </div>
+  <a routerLink="/">Jogar Novamente</a>
+</section>
+<section id="lose" *ngIf="this.motor.moneyPlayer == 0">
+  <div>
+    <h2>Você Perdeu!</h2>
+    <p>Agora não passará de um animal de estimação</p>
+  </div>
+  <a (click)="resetGame()">Jogar Novamente</a>
+</section>
