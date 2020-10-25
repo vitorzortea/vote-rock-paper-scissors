@@ -1,1 +1,48 @@
-<p>jogo works!</p>
+<section id="jogada">
+  <main>
+    <div id="enemy">
+      <img src="/assets/img/enemy.png" alt="Mary Saotome" />
+      <div class="money">
+        <p>
+          {{motor.moneyEnemy}}
+          <span>￥ {{motor.moneyEnemy}},000</span>
+        </p>
+        <img src="/assets/img/icon-ficha.png" alt="Fichas">
+      </div>
+    </div>
+    <span></span>
+  </main>
+
+  <div id="my-cards">
+    <button *ngFor="let carta of this.motor.maoPlayer; let i=index" (click)="resultado(i)">
+      <img src={{carta.image}} alt="Cartas" />
+    </button>
+  </div>
+  <div id="interface-game">
+    <main>
+      <div>
+        <div class="money">
+          <p>
+            {{motor.moneyPlayer}}
+            <span>￥ {{motor.moneyPlayer}},000</span>
+          </p>
+          <img src="/assets/img/icon-ficha.png" alt="Fichas">
+        </div>
+        <span></span>
+        <div id="select-aposta">
+          <p>Quanto apostar?</p>
+          <span [formGroup]="apostaForm">
+            <input
+              type="range"
+              min="1"
+              max={{maxAposta}}
+              value="1"
+              formControlName="aposta"
+            />
+            <p>{{apostaForm.controls.aposta.value}}</p>
+          </span>
+        </div>
+      </div>
+    </main>
+  </div>
+</section>

@@ -1,0 +1,132 @@
+#jogada
+  min-height: 100vh
+  background: url('/assets/img/bg-2.jpg')
+  background-position: center
+  background-size: cover
+  color: white
+  display: flex
+  flex-direction: column
+
+  &>main
+    flex: auto
+    display: flex
+    flex-direction: column
+    width: 100%
+    align-items: right
+
+    #enemy
+      position relative
+      display: table
+      line-height: 0
+      margin: 0 0 0 auto
+
+      &>img
+        max-height: 400px
+        padding: 20px 100px 0 0
+
+      &>.money
+        position: absolute
+        bottom: 50px
+        right: 10px
+
+        p
+          line-height: 1em
+
+          span
+            padding: 0
+
+    &>span
+      display: block
+      flex: auto
+      background: url('/assets/img/mesa.jpg')
+      background-position: top center
+      background-size: 100% 100%
+      position relative
+      z-index: 2
+      box-shadow: 0px -5px 20px rgba(0, 0, 0, .4)
+
+  #my-cards
+    display: flex
+    z-index: 2
+    width: 50vw
+    height: 0
+    max-width: 440px
+    margin: 0 0 0 20px
+    position: relative
+
+    button
+      cursor: pointer
+      position relative
+      width: 33.333%
+      transition: .5s
+
+      &:nth-child(2)
+        margin-left: -10px
+
+      &:nth-child(2)
+        margin-left: -10px
+
+      &:hover
+        transform: scale(1.1)
+        cursor: pointer
+
+      img
+        position: absolute
+        bottom: -20px
+        border-radius: 10px
+        box-shadow: -2px 10px 11px #000
+
+  #interface-game
+    background-color: #252525
+    position relative
+    z-index: 3
+
+    &>main
+      background-color: #313131
+      max-width: 80%
+      transform: skew(-45deg)
+      margin: 0 auto
+
+      &>div
+        transform: skew(45deg)
+        padding: 10px 20px
+        display: flex
+        justify-content: center
+
+        &>span
+          display: block
+          margin: 0 30px
+          border-left: solid 2px #4c4c4c
+          border-right: solid 3px #252525
+
+        #select-aposta
+          font-weight: bold
+          &>span
+            display: flex
+            align-items: center
+
+            input
+              -webkit-appearance: none
+              border: solid 5px #797c65
+              background: #96c695
+              border-radius: 20px 0px 0px 20px
+              height: 0px
+              padding: 2.5px 0
+
+              &::-webkit-slider-thumb
+                -webkit-appearance: none
+                appearance: none
+                width: 20px
+                height: 20px
+                background-color: #797c65
+                cursor: pointer
+                border-radius: 50%
+                border: solid 3px #96c695
+
+
+            p
+              font-size: 20px
+              padding: 5px
+              border-radius: 10px
+              background-color: #797c65
+

@@ -9,6 +9,7 @@ import { JogoComponent } from './jogo/jogo.component';
 import { ResultadoComponent } from './resultado/resultado.component';
 import { FinalComponent } from './final/final.component';
 import { TutorialComponent } from './tutorial/tutorial.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,9 @@ import { TutorialComponent } from './tutorial/tutorial.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

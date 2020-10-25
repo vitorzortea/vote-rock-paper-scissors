@@ -3,10 +3,10 @@
   <p>Ecolha 3 cartas</p>
   <div id="baralho">
     <ng-container *ngFor="let carta of motor.baralhoAtual; let i=index">
-      <input id="carta-{{i}}" type="checkbox" value={{i}} >
-      <label for="carta-{{i}}">
+      <input id="carta-{{i}}" type="checkbox" disabled (change)="selctCarta(i)" >
+      <label for="carta-{{i}}" [ngStyle]="{'animation-delay': (0.15*i)+'s'}">
         <img src="/assets/img/baralho/capa.jpg" alt="Capa Carta" />
-        <img src="/assets/img/baralho/all.gif" alt="Animação Aleatório" />
+        <img src="/assets/img/baralho/all.gif" alt="Animação Aleatório"  [ngStyle]="{'animation-delay': ((0.15*i)+0.15)+'s'}" />
       </label>
     </ng-container>
   </div>

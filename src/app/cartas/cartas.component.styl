@@ -26,24 +26,49 @@
       display: none
 
       &:checked+label
-        transform: scale(0.0001)
+        animation scale-card  .1s linear 0s forwards;
+        animation-delay: 0s !important
+
+    input:not(:disabled)+label:hover
+      filter: drop-shadow(0px 0px 5px #F4AE00) drop-shadow(0px 0px 5px #F4AE00)
 
     label
-      flex: 0 0 10%
-      width: 10%
+      flex: 0 0 calc(10% - 10px)
+      width: calc(10% - 10px)
       position: relative
       line-height: 0
-      padding: 5px
+      margin: 5px
       cursor: pointer
       transition: .5s
       border-radius: 10px
       overflow hidden
-
-      &:hover
-        transform: scale(1.1)
+      animation turn-card  .3s linear 0s forwards;
 
       img:nth-child(2)
         position: absolute
-        top: 5px
-        left: 5px
-        width: calc(100% - 10px)
+        top: 0
+        left: 0
+        width: 100%
+        animation turn-img-card .1s linear 0s forwards;
+
+
+
+@keyframes turn-card
+	0%
+		transform scaleX(1)
+	50%
+		transform scaleX(0)
+	100%
+		transform scaleX(1)
+
+@keyframes scale-card
+	0%
+		transform scale(1)
+	100%
+		transform scale(0)
+
+@keyframes turn-img-card
+	0%
+		opacity 1
+	100%
+		opacity 0
