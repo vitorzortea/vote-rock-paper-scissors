@@ -52,9 +52,6 @@ export class CartasComponent implements OnInit {
     if (this.selectCard === 3) {
       this.router.navigate(['/jogada']);
     }
-    console.log(this.motor.baralhoAtual);
-    console.log(this.motor.maoPlayer);
-    console.log(this.motor.maoEnemy);
   }
 
 

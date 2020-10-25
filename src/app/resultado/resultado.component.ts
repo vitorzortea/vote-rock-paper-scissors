@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { MotorService } from '../service/motor.service';
 
 @Component({
   selector: 'app-resultado',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResultadoComponent implements OnInit {
 
-  constructor() { }
+  @Input() jogada;
 
-  ngOnInit() {
-  }
+  constructor(
+    public motor: MotorService
+  ) { }
+
+  ngOnInit() { }
 
 }

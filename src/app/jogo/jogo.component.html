@@ -1,4 +1,4 @@
-<section id="jogada">
+<section id="jogada" *ngIf="!resultadoKey">
   <main>
     <div id="enemy">
       <img src="/assets/img/enemy.png" alt="Mary Saotome" />
@@ -46,3 +46,4 @@
     </main>
   </div>
 </section>
+<app-resultado *ngIf="resultadoKey" [jogada]="jogada"></app-resultado>

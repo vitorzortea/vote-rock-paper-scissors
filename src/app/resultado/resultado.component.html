@@ -1,1 +1,30 @@
-<p>resultado works!</p>
+<section id="resultado">
+  <p>{{jogada.resultado}}</p>
+  <main>
+    <div>
+      <div class="money">
+        <p>
+          {{motor.moneyPlayer}}
+          <span>￥ {{motor.moneyPlayer}},000</span>
+        </p>
+        <img src="/assets/img/icon-ficha.png" alt="Fichas">
+      </div>
+      <span>
+        <img src={{motor.maoPlayer[this.jogada.player].imageHand}} alt={{motor.maoPlayer[this.jogada.player].name}} />
+      </span>
+    </div>
+    <div>
+
+      <span>
+        <img src={{motor.maoEnemy[this.jogada.enemy].imageHand}} alt={{motor.maoEnemy[this.jogada.enemy].name}} />
+      </span>
+      <div class="money">
+        <p>
+          {{motor.moneyEnemy}}
+          <span>￥ {{motor.moneyEnemy}},000</span>
+        </p>
+        <img src="/assets/img/icon-ficha.png" alt="Fichas">
+      </div>
+    </div>
+  </main>
+</section>
