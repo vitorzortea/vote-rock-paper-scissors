@@ -3,7 +3,7 @@
     <h2>Você Venceu!</h2>
     <p>Mas já? eu quero mais! vamos aposta até o limite!</p>
   </div>
-  <a routerLink="/">Jogar Novamente</a>
+  <a (click)="resetGame()">Jogar Novamente</a>
 </section>
 <section id="lose" *ngIf="this.motor.moneyPlayer == 0">
   <div>

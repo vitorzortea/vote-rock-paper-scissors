@@ -5,46 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class MotorService {
   baralhoAtual = [];
-  maoPlayer = [
-    {
-      name: 'Pedra',
-      value: 1,
-      image: '/assets/img/baralho/pedra.jpg',
-      imageHand: '/assets/img/baralho/hand-pedra.png'
-    },
-    {
-      name: 'Pedra',
-      value: 1,
-      image: '/assets/img/baralho/pedra.jpg',
-      imageHand: '/assets/img/baralho/hand-pedra.png'
-    },
-    {
-      name: 'Pedra',
-      value: 1,
-      image: '/assets/img/baralho/pedra.jpg',
-      imageHand: '/assets/img/baralho/hand-pedra.png'
-    },
-  ];
-  maoEnemy = [
-    {
-      name: 'Pedra',
-      value: 1,
-      image: '/assets/img/baralho/pedra.jpg',
-      imageHand: '/assets/img/baralho/hand-pedra.png'
-    },
-    {
-      name: 'Pedra',
-      value: 1,
-      image: '/assets/img/baralho/pedra.jpg',
-      imageHand: '/assets/img/baralho/hand-pedra.png'
-    },
-    {
-      name: 'Pedra',
-      value: 1,
-      image: '/assets/img/baralho/pedra.jpg',
-      imageHand: '/assets/img/baralho/hand-pedra.png'
-    },
-  ];
+  maoPlayer = [];
+  maoEnemy = [];
   moneyPlayer = 120;
   moneyEnemy = 120;
   cartas = [
